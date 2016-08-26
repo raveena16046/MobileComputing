@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000ff"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_vertical|center"
+    tools:context="com.example.anuj.primenumberr.MainActivity">
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#adff2f"
+        android:text="@string/show_hint_button"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="showHintPressed"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        />
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@id/hintTextView"
+        android:visibility="invisible"
+        android:layout_gravity="center_vertical"
+        android:textAlignment="center"
+        android:background="#FF8a65"
+        android:typeface="normal"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textColor="#000000" />
+</RelativeLayout>
